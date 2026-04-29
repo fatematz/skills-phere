@@ -47,7 +47,6 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
 
-          {/* ✅ React Icons here */}
           <div className="flex gap-4 mb-4 text-2xl">
             
             <a href="#" className="hover:text-blue-500 transition">
