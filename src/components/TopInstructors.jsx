@@ -39,24 +39,24 @@ const topInstructors = [
 
 const TopInstructors = () => {
     return (
-        <div className="bg-gradient-to-r from-blue-50 to-white py-20 py-10">
+        <div className="bg-gradient-to-r from-blue-50 to-white py-20 py-10 ">
             <div className="container">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
                     Top Instructors
                     <span className="block h-1 w-16 bg-blue-400 mt-2 rounded"></span>
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-6  pt-[40px]">
                     {topInstructors.map(instructor => (
                         <div
                             key={instructor.id}
-                            className={`bg-white rounded-2xl p-6 text-center space-y-3 hover:shadow-lg transition duration-300
+                            className={`bg-white rounded-2xl mt-6 p-6 text-center space-y-3 hover:shadow-lg transition duration-300
                                 ${instructor.id % 2 === 0
                                     ? "border-2 border-blue-500"
-                                    : "border-2 border-gray-300"
+                                    : ""
                                 }`}
                         >
-                            <div className="flex justify-center">
+                            <div className="absolute -mt-15 ml-17 flex justify-center">
                                 <img
                                     src={instructor.image}
                                     alt={instructor.name}
@@ -64,7 +64,7 @@ const TopInstructors = () => {
                                 />
                             </div>
 
-                            <h3 className="text-2xl font-bold text-gray-800">
+                            <h3 className="text-2xl font-bold text-gray-800 mt-10">
                                 {instructor.name}
                             </h3>
 

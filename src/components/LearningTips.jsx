@@ -38,23 +38,23 @@ const LearningTips = () => {
                     <span className="block h-1 w-16 bg-blue-400 mt-2 rounded"></span>
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-[40px]">
                     {learningTips.map(tip => (
                         <div
                             key={tip.id}
                             className={` py-15 shadow-md hover:shadow-xl transition duration-300 text-center space-y-2
                                 ${tip.id === 1
-                                    ? "bg-blue-400 border border-blue-600"
-                                    : "bg-white border border-blue-200"
+                                    ? "bg-blue-400 "
+                                    : ""
                                 }`}
                         >
                             <span className="text-4xl">{tip.icon}</span>
 
-                            <p className={`text-xs font-medium ${tip.id === 1 ? "text-white" : "text-blue-400"}`}>
+                            <p className={`text-[16px] font-medium ${tip.id === 1 ? "text-white" : "text-blue-400"}`}>
                                 {tip.category}
                             </p>
 
-                            <h3 className={`text-lg font-semibold ${tip.id === 1 ? "text-white" : "text-gray-800"}`}>
+                            <h3 className={`text-2xl font-semibold ${tip.id === 1 ? "text-white" : "text-gray-800"}`}>
                                 {tip.title}
                             </h3>
 

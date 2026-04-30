@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import UserImg from "@/assets/user.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { UserPen } from "lucide-react";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -19,12 +19,10 @@ const Navbar = () => {
     <div className="shadow-md">
       <nav className="bg-white  py-3 flex justify-between items-center container ">
         
-        {/* Logo */}
         <h1 className="text-2xl font-bold text-blue-600">
           SkillSphere
         </h1>
 
-        {/* Links */}
         <div className="hidden md:flex gap-6 font-medium">
           
           <Link href="/" className={linkClass("/")}>
@@ -41,10 +39,10 @@ const Navbar = () => {
 
         </div>
 
-        {/* Right side */}
         <div className="flex items-center gap-4">
+        
           
-          <Image src={UserImg} width={40} height={40} alt="user" />
+          <UserPen/>
 
           <Link href="/login">
             <button className="border border-blue-500 text-blue-500 px-3 py-1 rounded-md hover:bg-blue-500 hover:text-white">

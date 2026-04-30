@@ -1,33 +1,41 @@
 import coursesData from "@/courses.json";
 
 const CourseDetailsPage = async ({ params }) => {
-      const { id } = await params; 
+    const { id } = await params;
     const course = coursesData.find(c => c.id === parseInt(id));
 
     if (!course) return <h1 className="text-center py-10 text-2xl">Course Not Found!</h1>;
 
     return (
-        <div className="bg-blue-100 p-16">
-        <div className="container  max-w-3xl mx-auto p-10 rounded-2xl ">
+        <div className="bg-gray-100 flex flex-col items-center py-16 px-4">
 
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 border-2 border-gray-500  p-5 rounded-2xl">
+            <h1 className="text-4xl font-serif text-blue-500 mb-1 text-center">{course.title}</h1>
+            <p className="text-xs tracking-widest text-gray-400 uppercase mb-1">To Our Course</p>
+            <div className="w-8 h-0.5 bg-gray-400 mb-16"></div>
 
-            <div className="">
-                <img className="rounded-2xl" src={course.image} alt="course.image" width={900}  />
+            <div className="flex justify-center w-full">
+                <img
+                    src={course.image}
+                    alt={course.title}
+                    width={400}
+                    className="h-48 object-cover shadow-lg relative z-10 mb-[-96px]"
+                />
             </div>
 
-            <div className="">
-                <div className="">
-                    <h1 className="text-[20px] md:text-[30px] text-blue-500 font-bold "> {course.title} </h1>
-                </div>
+            <div className="bg-blue-500 container pt-35 pb-16 px-8 space-y-6 text-center">
+               
 
-                <div className="text-[15px] md:text-[20px] font-semibold mt-3">
+
+                <p className="text-xl text-white opacity-80 italic">
+                    By {course.instructor}
+                </p>
+
+                <p className="text-lg text-white opacity-90 leading-relaxed max-w-3xl mx-auto">
                     {course.description}
-                </div>
+                </p>
+
             </div>
 
-           </div>
-        </div>
         </div>
     );
 };
