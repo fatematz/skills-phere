@@ -13,7 +13,7 @@ const TopCourse = async () => {
   Popular Courses
   <span className="block h-1 w-16 bg-blue-400 mt-2 rounded"></span>
 </h2>
-            <div className="grid grid-cols-3 gap-4 ">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-4 ">
             {
                 top3.map(course => (
                         <div key={course.id} className="shadow-2xl space-y-2 text-center pb-3">
