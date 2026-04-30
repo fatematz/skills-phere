@@ -6,7 +6,7 @@
     "duration": "20 hours",
     "rating": 4.8,
     "level": "Beginner",
-    "description": "Learn full-stack web development from scratch.",
+    "description": "Learn full-stack web development from scratch. This comprehensive course covers HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. By the end, you will be able to build and deploy complete web applications with confidence.",
     "image": "https://i.ibb.co.com/BVQ7hVCZ/PG7zkdkr-T9a-By-LHBe6sv-Teachable-Thumbnails-1.png",
     "category": "Development"
   },
@@ -17,8 +17,8 @@
     "duration": "15 hours",
     "rating": 4.7,
     "level": "Intermediate",
-    "description": "Design beautiful interfaces with Figma and design thinking.",
-    "image": "https://i.postimg.cc/example-course2.png",
+    "description": "Design beautiful and user-friendly interfaces with Figma and design thinking principles. This course covers wireframing, prototyping, color theory, typography, and usability testing to help you create stunning digital experiences.",
+    "image": "https://i.ibb.co.com/1GBzyjzc/maxresdefault.jpg",
     "category": "Design"
   },
   {
@@ -28,7 +28,7 @@
     "duration": "25 hours",
     "rating": 4.9,
     "level": "Beginner",
-    "description": "Master Python, Pandas, and data visualization techniques.",
+    "description": "Master Python programming, Pandas, NumPy, and data visualization techniques using Matplotlib and Seaborn. You will learn how to analyze real-world datasets, build insightful charts, and extract meaningful patterns from raw data.",
     "image": "https://i.ibb.co.com/YM1X57X/Python-for-Data-Science-1.png",
     "category": "Data Science"
   },
@@ -39,8 +39,8 @@
     "duration": "18 hours",
     "rating": 4.6,
     "level": "Advanced",
-    "description": "Build production-ready apps with React and Next.js.",
-    "image": "https://i.postimg.cc/example-course4.png",
+    "description": "Build production-ready applications with React and Next.js. This course dives deep into server-side rendering, static site generation, API routes, authentication, performance optimization, and deployment strategies for modern web apps.",
+    "image": "https://i.ibb.co.com/hxGRk6T4/6853f06215cbd42169823b67-React-js-vs-next-js-which-one-to-choose.webp",
     "category": "Development"
   },
   {
@@ -50,8 +50,8 @@
     "duration": "12 hours",
     "rating": 4.5,
     "level": "Beginner",
-    "description": "Grow your brand with SEO, ads, and social media marketing.",
-    "image": "https://i.postimg.cc/example-course5.png",
+    "description": "Grow your brand with powerful digital marketing strategies including SEO, Google Ads, social media marketing, email campaigns, and content creation. Learn how to attract, engage, and convert your target audience into loyal customers.",
+    "image": "https://i.ibb.co.com/s9rPLTBQ/1-s-Jk5tm0l-r6g-R1q-FFw8-IA.jpg",
     "category": "Business"
   },
   {
@@ -61,8 +61,8 @@
     "duration": "30 hours",
     "rating": 4.8,
     "level": "Intermediate",
-    "description": "Learn penetration testing and protect systems from threats.",
-    "image": "https://i.postimg.cc/example-course6.png",
+    "description": "Learn penetration testing, network security, and ethical hacking techniques used by professional security experts. This course covers vulnerability assessment, exploit development, web application security, and how to protect systems from real-world cyber threats.",
+    "image": "https://i.ibb.co.com/jP45grFz/1682091867599.jpg",
     "category": "Security"
   },
   {
@@ -72,7 +72,7 @@
     "duration": "35 hours",
     "rating": 4.9,
     "level": "Intermediate",
-    "description": "Hands-on ML with Python, scikit-learn, and TensorFlow.",
+    "description": "Hands-on machine learning with Python, scikit-learn, and TensorFlow. This course covers supervised and unsupervised learning, neural networks, natural language processing, and model deployment. You will build real-world ML projects from start to finish.",
     "image": "https://i.ibb.co.com/KzyM2hKz/300-Machine-Learning-Project-Ideas-With-Source-Code-for-Beginners-to-Experts.jpg",
     "category": "Data Science"
   },
@@ -83,8 +83,8 @@
     "duration": "10 hours",
     "rating": 4.4,
     "level": "Beginner",
-    "description": "Master typography, color theory, and layout design.",
-    "image": "https://i.postimg.cc/example-course8.png",
+    "description": "Master the core principles of graphic design including typography, color theory, layout design, and visual hierarchy. This course will teach you how to create eye-catching logos, posters, and digital graphics using industry-standard design tools.",
+    "image": "https://i.ibb.co.com/7JwpwZ4t/maxresdefault-1.jpg",
     "category": "Design"
   }
 ]
