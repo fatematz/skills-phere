@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://i.ibb.co.com/BVQ7hVCZ/PG7zkdkr-T9a-By-LHBe6sv-Teachable-Thumbnails-1.png",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Design Masterclass",
+    "instructor": "Sarah Kim",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Design beautiful interfaces with Figma and design thinking.",
+    "image": "https://i.postimg.cc/example-course2.png",
+    "category": "Design"
+  },
+  {
+    "id": 3,
+    "title": "Python for Data Science",
+    "instructor": "Ahmed Raza",
+    "duration": "25 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "description": "Master Python, Pandas, and data visualization techniques.",
+    "image": "https://i.ibb.co.com/YM1X57X/Python-for-Data-Science-1.png",
+    "category": "Data Science"
+  },
+  {
+    "id": 4,
+    "title": "Advanced React & Next.js",
+    "instructor": "Maria Lopez",
+    "duration": "18 hours",
+    "rating": 4.6,
+    "level": "Advanced",
+    "description": "Build production-ready apps with React and Next.js.",
+    "image": "https://i.postimg.cc/example-course4.png",
+    "category": "Development"
+  },
+  {
+    "id": 5,
+    "title": "Digital Marketing Strategy",
+    "instructor": "Tom Nguyen",
+    "duration": "12 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Grow your brand with SEO, ads, and social media marketing.",
+    "image": "https://i.postimg.cc/example-course5.png",
+    "category": "Business"
+  },
+  {
+    "id": 6,
+    "title": "Ethical Hacking & Cybersecurity",
+    "instructor": "Priya Sharma",
+    "duration": "30 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Learn penetration testing and protect systems from threats.",
+    "image": "https://i.postimg.cc/example-course6.png",
+    "category": "Security"
+  },
+  {
+    "id": 7,
+    "title": "Machine Learning A–Z",
+    "instructor": "James Carter",
+    "duration": "35 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Hands-on ML with Python, scikit-learn, and TensorFlow.",
+    "image": "https://i.ibb.co.com/KzyM2hKz/300-Machine-Learning-Project-Ideas-With-Source-Code-for-Beginners-to-Experts.jpg",
+    "category": "Data Science"
+  },
+  {
+    "id": 8,
+    "title": "Graphic Design Fundamentals",
+    "instructor": "Lena Braun",
+    "duration": "10 hours",
+    "rating": 4.4,
+    "level": "Beginner",
+    "description": "Master typography, color theory, and layout design.",
+    "image": "https://i.postimg.cc/example-course8.png",
+    "category": "Design"
+  }
+]
