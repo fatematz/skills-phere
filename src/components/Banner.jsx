@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <section className="bg-gradient-to-r from-blue-50 to-white py-20">
       
-      <div className="container mx-auto px-6"> 
+      <div className="container mx-auto "> 
         
         <div className="md:w-1/2">
           

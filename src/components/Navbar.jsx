@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div className="shadow-md">
-      <nav className="bg-white px-6 py-3 flex justify-between items-center container ">
+      <nav className="bg-white  py-3 flex justify-between items-center container ">
         
         {/* Logo */}
         <h1 className="text-2xl font-bold text-blue-600">
