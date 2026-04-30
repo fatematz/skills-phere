@@ -31,8 +31,8 @@ const Navbar = () => {
             Home
           </Link>
 
-          <Link href="/courses" className={linkClass("/courses")}>
-            Courses
+          <Link href="/couresCard" className={linkClass("/couresCard")}>
+            All Courses
           </Link>
 
           <Link href="/profile" className={linkClass("/profile")}>

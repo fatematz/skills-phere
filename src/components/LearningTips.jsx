@@ -42,7 +42,7 @@ const LearningTips = () => {
                     {learningTips.map(tip => (
                         <div
                             key={tip.id}
-                            className={`rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300 text-center space-y-2
+                            className={` py-15 shadow-md hover:shadow-xl transition duration-300 text-center space-y-2
                                 ${tip.id === 1
                                     ? "bg-blue-400 border border-blue-600"
                                     : "bg-white border border-blue-200"

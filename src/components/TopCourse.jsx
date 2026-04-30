@@ -2,7 +2,7 @@ import coursesData from "../courses.json";
 
 const TopCourse = async () => {
 
-   const top3 = coursesData
+   const top3 = [...coursesData]
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 3);
 
