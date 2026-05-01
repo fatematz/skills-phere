@@ -18,11 +18,11 @@ const CourseDetailsPage = async ({ params }) => {
                     src={course.image}
                     alt={course.title}
                     width={400}
-                    className="h-48 object-cover shadow-lg relative z-10 mb-[-96px]"
+                    className="h-48 object-cover shadow-lg relative z-10 mb-[-96px] rounded-2xl"
                 />
             </div>
 
-            <div className="bg-blue-500 container pt-35 pb-16 px-8 space-y-6 text-center">
+            <div className="bg-blue-400/50 backdrop-blur-xg container pt-35 pb-16 px-8 space-y-6 text-center">
                
 
 

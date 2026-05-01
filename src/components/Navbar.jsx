@@ -16,8 +16,8 @@ const Navbar = () => {
     }`;
 
   return (
-    <div className="shadow-md">
-      <nav className="bg-white  py-3 flex justify-between items-center container ">
+    <div className="shadow-md sticky top-0 z-50 bg-transparent">
+      <nav className=" py-3 flex justify-between items-center container ">
         
         <h1 className="text-2xl font-bold text-blue-600">
           SkillSphere
@@ -29,7 +29,7 @@ const Navbar = () => {
             Home
           </Link>
 
-          <Link href="/couresCard" className={linkClass("/couresCard")}>
+          <Link href="/courseCard" className={linkClass("/courseCard")}>
             All Courses
           </Link>
 
@@ -44,15 +44,15 @@ const Navbar = () => {
           
           <UserPen/>
 
-          <Link href="/login">
+          <Link href="/auth/login">
             <button className="border border-blue-500 text-blue-500 px-3 py-1 rounded-md hover:bg-blue-500 hover:text-white">
-              Login
+              login
             </button>
           </Link>
 
-          <Link href="/register">
+          <Link href="/auth/register">
             <button className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600">
-              Register
+              register
             </button>
           </Link>
 

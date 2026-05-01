@@ -1,3 +1,6 @@
+import { Star } from "lucide-react";
+import { Users, BookOpen } from "lucide-react";
+
 const topInstructors = [
   {
     "id": 1,
@@ -46,7 +49,7 @@ const TopInstructors = () => {
                     <span className="block h-1 w-16 bg-blue-400 mt-2 rounded"></span>
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-6  pt-[40px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4  pt-[40px]">
                     {topInstructors.map(instructor => (
                         <div
                             key={instructor.id}
@@ -76,13 +79,13 @@ const TopInstructors = () => {
                                 {instructor.subject}
                             </p>
 
-                            <p className="text-yellow-400 font-semibold">
-                                ⭐ {instructor.rating}
+                            <p className="text-yellow-400 font-semibold flex justify-center items-center gap-2">
+                                <Star size={16}/> {instructor.rating}
                             </p>
 
-                            <div className="flex justify-between gap-4 text-[15px] text-gray-500 pt-2 border-t border-gray-200">
-                                <span>👨‍🎓 {instructor.students.toLocaleString()} students</span>
-                                <span>📚 {instructor.courses} courses</span>
+                            <div className="flex justify-between gap-2 text-[15px] text-gray-500 pt-2 border-t border-gray-200 pb-2 border-b ">
+                                <span className="flex items-center gap-1 border-r pr-2"><Users size={16} /> {instructor.students.toLocaleString()} students</span>
+                                <span className="flex items-center gap-1"><BookOpen size={16} /> {instructor.courses} courses</span>
                             </div>
                         </div>
                     ))}

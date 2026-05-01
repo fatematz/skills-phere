@@ -1,3 +1,5 @@
+import { Timer, PenLine, CalendarDays, PhoneOff } from "lucide-react";
+
 const learningTips = [
   {
     "id": 1,
@@ -30,6 +32,8 @@ const learningTips = [
 ];
 
 const LearningTips = () => {
+
+
     return (
         <div className="bg-gray-50">
             <div className="container py-10">
@@ -39,7 +43,15 @@ const LearningTips = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-[40px]">
-                    {learningTips.map(tip => (
+                    {learningTips.map(tip => {
+
+                        const IconComponent = 
+                            tip.id === 1 ? Timer : 
+                            tip.id === 2 ? PenLine : 
+                            tip.id === 3 ? CalendarDays : 
+                            PhoneOff;
+
+                            return(
                         <div
                             key={tip.id}
                             className={` py-15 shadow-md hover:shadow-xl transition duration-300 text-center space-y-2
@@ -48,7 +60,9 @@ const LearningTips = () => {
                                     : ""
                                 }`}
                         >
-                            <span className="text-4xl">{tip.icon}</span>
+                            <div className="flex justify-center items-center mb-3 w-[50] h-[50] p-2 mx-auto rounded-full bg-black">
+                            <IconComponent size={25} strokeWidth={1.5} className={` ${tip.id === 1 ? "text-white" : "text-white"}  `} />
+                            </div>
 
                             <p className={`text-[16px] font-medium ${tip.id === 1 ? "text-white" : "text-blue-400"}`}>
                                 {tip.category}
@@ -62,7 +76,8 @@ const LearningTips = () => {
                                 {tip.description}
                             </p>
                         </div>
-                    ))}
+                        )
+                    })}
                 </div>
             </div>
         </div>

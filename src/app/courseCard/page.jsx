@@ -1,5 +1,7 @@
 import coursesData from "@/courses.json";
 import Link from "next/link";
+import { Clock, BarChart } from "lucide-react";
+import { Star } from "lucide-react";
 
 const CourseCard = () => {
     const allCourses = coursesData;
@@ -14,7 +16,7 @@ const CourseCard = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
                 {allCourses.map(allCourse => (
-                    <div key={allCourse.id} className=" rounded-xl transition duration-300 bg-white shadow-md hover:shadow-xl border-b-4  border-b-blue-500   ">
+                    <div key={allCourse.id} className=" rounded-xl transition duration-300 bg-white-400/20 backdrop-blur-lg shadow-md hover:shadow-xl border-b-4  border-b-blue-500   ">
                         
                         <div className="p-4">
                         <img
@@ -26,7 +28,7 @@ const CourseCard = () => {
 
                         <div className="p-4 space-y-3">
                             
-                            <span className="text-[15px] bg-blue-100 text-blue-500 px-2 py-1 rounded-full font-medium  ">
+                            <span className="text-[15px] bg-blue-400/20 backdrop-blur-lg  text-black px-2 py-1 rounded-full font-medium  ">
                                 {allCourse.category}
                             </span>
 
@@ -34,18 +36,18 @@ const CourseCard = () => {
                                 {allCourse.title}
                             </h3>
 
-                            <p className="text-xl italic font-bold text-gray-500">By {allCourse.instructor}</p>
+                            <p className="text-xl font-bold text-gray-500">By {allCourse.instructor}</p>
 
                        
 
-                            <div className="flex gap-3 text-[15px] text-gray-500">
-                                <span>⏱ {allCourse.duration}</span>
-                                <span>📊 {allCourse.level}</span>
+                            <div className="flex items-center gap-3 text-[15px] text-gray-500 border-t pt-3 gap-9">
+                                <span className="flex justify-center items-center gap-1 border-r pr-7"><Clock size={16} /> {allCourse.duration}</span>
+                                <span className="flex justify-center items-center gap-1"><BarChart size={16}/> {allCourse.level}</span>
                             </div>
 
                             <div className="flex justify-between items-center pt-2 border-t-1 border-gray-500">
-                                <span className="text-black font-medium">⭐ {allCourse.rating}</span>
-                                <Link href={`/couresCard/${allCourse.id}`}>
+                                <span className="text-black font-medium flex justify-center items-center gap-2"> <Star size={16}/> {  allCourse.rating}</span>
+                                <Link href={`/courseCard/${allCourse.id}`}>
                                     <button className="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded-lg border border-blue-400 transition duration-300 text-sm">
                                         Details
                                     </button>

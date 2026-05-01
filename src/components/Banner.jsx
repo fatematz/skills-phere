@@ -5,11 +5,11 @@ const Banner = () => {
   return (
     <section className="bg-gradient-to-r from-blue-50 to-white pt-20 overflow-hidden">
       
-      <div className="container mx-auto px-4"> 
+      <div className="container mx-auto"> 
         
-        <div className="flex flex-col md:flex-row justify-between items-end gap-10">
+        <div className="flex flex-col md:flex-row justify-between items-end  md:gap-10">
           
-          <div className=" pb-40">
+          <div className="pb-5 md:pb-40">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-800">
               Learn, Build & Grow with SkillSphere
             </h1>
@@ -18,18 +18,22 @@ const Banner = () => {
               Join thousands of learners and master in-demand skills with structured courses, real projects, and expert guidance.
             </p>
 
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex flex-wrap gap-4">
+              <div className="">
               <Link href="/courses">
                 <button className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition font-medium">
                   Browse Courses
                 </button>
               </Link>
+          </div>
 
+          <div className="">
               <Link href="/about">
                 <button className="border border-blue-600 text-blue-600 px-8 py-3 rounded-md hover:bg-blue-600 hover:text-white transition font-medium">
                   Explore Platform
                 </button>
               </Link>
+            </div>
             </div>
           </div>
 
