@@ -22,7 +22,7 @@ const CourseDetailsPage = async ({ params }) => {
                 />
             </div>
 
-            <div className="bg-blue-400/50 backdrop-blur-xg container pt-35 pb-16 px-8 space-y-6 text-center">
+            <div className="bg-[#153a70] container pt-35 pb-16 px-8 space-y-6 text-center">
                
 
 
