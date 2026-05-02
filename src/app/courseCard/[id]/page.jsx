@@ -12,7 +12,7 @@ const CourseDetailsPage = async ({ params }) => {
         <div className=" bg-gray-100 py-16 px-4">
             <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl flex flex-col md:flex-row">
 
-                <div className="bg-[#153a70] w-full md:w-[40%] p-8 flex flex-col justify-between">
+                <div className="bg-blue-400 w-full md:w-[40%] p-8 flex flex-col justify-between">
                     
                     <div>
                         <span className="text-blue-300 text-xs uppercase tracking-widest font-semibold">
