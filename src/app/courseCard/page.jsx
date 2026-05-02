@@ -1,14 +1,30 @@
+"use client"
 import coursesData from "@/courses.json";
 import Link from "next/link";
 import { Clock, BarChart } from "lucide-react";
 import { Star } from "lucide-react";
+import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
 
 const CourseCard = () => {
     const allCourses = coursesData;
+     const { data: session } = authClient.useSession();
+  const user = session?.user;
+  const router = useRouter();
+
+      const handleDetailsClick = (id) => {
+    if (!user) {
+
+      router.push("/auth/login");
+    } else {
+
+      router.push(`/courseCard/${id}`);
+    }
+  };
 
     return (
         <div className="bg-gray-100">
-        <div className="container py-10 ">
+        <div className="container py-10 px-[20px] md:px-[20px] lg:px-[20px] xl:px-0 ">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
                 All Courses
                 <span className="block h-1 w-16 bg-blue-400 mt-2 rounded"></span>
@@ -47,11 +63,9 @@ const CourseCard = () => {
 
                             <div className="flex justify-between items-center pt-2 border-t-1 border-gray-500">
                                 <span className="text-black font-medium flex justify-center items-center gap-2"> <Star size={16}/> {  allCourse.rating}</span>
-                                <Link href={`/courseCard/${allCourse.id}`}>
-                                    <button className="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded-lg border border-blue-400 transition duration-300 text-sm">
+                                   <button  onClick={() => handleDetailsClick(allCourse.id)} className="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded-lg border border-blue-400 transition duration-300 text-sm">
                                         Details
                                     </button>
-                                </Link>
                             </div>
 
                         </div>

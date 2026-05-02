@@ -35,14 +35,14 @@ const LearningTips = () => {
 
 
     return (
-        <div className="bg-gray-50">
-            <div className="container py-10">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+        <div className="bg-gray-50 ">
+            <div className="container py-10 px-[20px] md:px-[20px] lg:px-[20px] xl:px-0 ">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 ">
                     Learning Tips
-                    <span className="block h-1 w-16 bg-blue-400 mt-2 rounded"></span>
+                    <span className="block h-1 w-16 bg-blue-400  mt-2 rounded"></span>
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-[40px]">
+                <div className=" mx-[20px] md:mx-[20px] lg:mx-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 py-[40px] ">
                     {learningTips.map(tip => {
 
                         const IconComponent = 
@@ -54,7 +54,7 @@ const LearningTips = () => {
                             return(
                         <div
                             key={tip.id}
-                            className={` py-15 shadow-md hover:shadow-xl transition duration-300 text-center space-y-2
+                            className={` py-15 px-3  shadow-md hover:shadow-xl transition duration-300 text-center space-y-2
                                 ${tip.id === 1
                                     ? "bg-blue-400 "
                                     : ""
