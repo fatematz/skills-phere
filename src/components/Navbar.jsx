@@ -35,18 +35,15 @@ const Navbar = () => {
           {isPending ? <span className="loading loading-dots loading-md"></span> : user && user.image ? (
             <div className="flex justify-center items-center gap-4">
               <div className="relative group cursor-pointer">
-                <Image
-                  src={user.image}
-                  alt={user.name}
-                  width={40}
-                  height={40}
-                  className="rounded-full object-cover border-2 border-blue-500"
-                />
+
+                <img src={user.image} alt="user img" 
+                      className="mx-auto border-2 border-blue-500 rounded-full object-cover w-[50px] h-[50px] " />
+
                 <div className="absolute -right-30 top-12 w-70 bg-white shadow-lg rounded-lg p-3
                     hidden group-hover:block border border-gray-100 z-50 text-center mt-4">
                   <div className="">
-                    <img src={user.image} alt="user img" width={60} height={60}
-                      className="mx-auto border-2 border-blue-500 rounded-full" />
+                    <img src={user.image} alt="user img" 
+                      className="mx-auto border-2 border-blue-500 rounded-full object-cover w-[50px] h-[50px] " />
                   </div>
                   <p className="font-semibold text-gray-800 my-2">{user.name}</p>
                   <p className="text-sm text-gray-500">{user.email}</p>
