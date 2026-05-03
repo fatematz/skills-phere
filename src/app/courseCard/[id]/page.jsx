@@ -75,18 +75,18 @@ const CourseDetailsPage = async ({ params }) => {
                     <div className="grid grid-cols-3 gap-4 border-t pt-6">
                         <div className="text-center">
                             <p className="text-gray-400 text-xs uppercase tracking-wider">Rating</p>
-                            <p className="text-2xl font-bold text-gray-800 flex items-center justify-center gap-1 mt-1">
+                            <p className="text-[15px] md:text-2xl font-bold text-gray-800 flex items-center justify-center gap-1 mt-1">
                                 <Star size={18} className="text-yellow-400" />
                                 {course.rating}
                             </p>
                         </div>
                         <div className="text-center">
                             <p className="text-gray-400 text-xs uppercase tracking-wider">Duration</p>
-                            <p className="text-2xl font-bold text-gray-800 mt-1">{course.duration}</p>
+                            <p className="text-[15px] md:text-2xl font-bold text-gray-800 mt-1">{course.duration}</p>
                         </div>
                         <div className="text-center">
                             <p className="text-gray-400 text-xs uppercase tracking-wider">Level</p>
-                            <p className="text-2xl font-bold text-gray-800 mt-1">{course.level}</p>
+                            <p className="text-[15px] md:text-2xl font-bold text-gray-800 mt-1">{course.level}</p>
                         </div>
                     </div>
                 </div>

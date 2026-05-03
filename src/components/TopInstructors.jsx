@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { Users, BookOpen } from "lucide-react";
+import Marquee from "react-fast-marquee";
 
 const topInstructors = [
   {
@@ -49,6 +50,7 @@ const TopInstructors = () => {
                     <span className="block h-1 w-16 bg-blue-400 mt-2 rounded"></span>
                 </h2>
 
+                <Marquee>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4  pt-[40px]">
                     {topInstructors.map(instructor => (
                         <div
@@ -90,10 +92,12 @@ const TopInstructors = () => {
                         </div>
                     ))}
                 </div>
+                </Marquee>
             </div>
         </div>
     );
 };
 
 export default TopInstructors;
+
 

@@ -7,6 +7,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ToastProvider from "@/components/ToastProvider";
+import "animate.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
