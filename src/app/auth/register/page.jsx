@@ -7,6 +7,8 @@ import { toast } from "react-toastify";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import Link from "next/link";
+
 
 const RegisterPage = () => {
   const {
@@ -42,18 +44,18 @@ const RegisterPage = () => {
   }
 
   return (
-    <div className="relative min-h-[80vh]">
+    <div className="bg-gray-100">
       {/* <Image src={BgImg} alt="background" fill className="object-cover -z-10" /> */}
 
-    <div className="bg-gray-50">
+    <div className="">
       <div className="min-h-[80vh] pt-[55px] px-4 pb-2">
         <div className="rounded-xl p-4 bg-white shadow-2xl max-w-[752px] px-6 sm:px-16 mx-auto mb-13">
-          <h1 className="text-center text-white font-bold text-2xl md:text-3xl border-b py-8">
+          <h1 className="text-center text-black font-bold text-2xl md:text-3xl border-b py-4">
             Register your account
           </h1>
 
           <form
-            className="mt-6 mb-6 w-full max-w-[300px] mx-auto text-black"
+            className="mt-4 w-full max-w-[300px] mx-auto text-black"
             onSubmit={handleSubmit(handleRegisterFunc)}
           >
             <fieldset className="fieldset">
@@ -72,7 +74,7 @@ const RegisterPage = () => {
             </fieldset>
 
             <fieldset className="fieldset">
-              <legend className="font-semibold text-[20px] fieldset-legend text-white">
+              <legend className="font-semibold text-[20px] fieldset-legend text-black">
                 Photo URL
               </legend>
               <input
@@ -87,7 +89,7 @@ const RegisterPage = () => {
             </fieldset>
 
             <fieldset className="fieldset">
-              <legend className="font-semibold text-[20px] fieldset-legend text-white">
+              <legend className="font-semibold text-[20px] fieldset-legend text-black">
                 Email
               </legend>
               <input
@@ -102,7 +104,7 @@ const RegisterPage = () => {
             </fieldset>
 
             <fieldset className="fieldset">
-              <legend className="font-semibold text-[20px] fieldset-legend text-white">
+              <legend className="font-semibold text-[20px] fieldset-legend text-black">
                 Password
               </legend>
               <div className="relative w-full">
@@ -121,19 +123,23 @@ const RegisterPage = () => {
               </div>
             </fieldset>
 
-            <p className="text-white mt-4 text-[15px] text-center">I agree to all Term, Privacy and fees</p>
+            <p className="text-black mt-4 text-[15px] text-center">I agree to all Term, Privacy and fees</p>
 
             <button className="btn bg-blue-500 text-white mt-[20px] w-full border-0">
               Sign Up
             </button>
-            <p className="text-white mt-4 text-[15px] text-center">OR</p>
+            <p className="text-black mt-4 text-[15px] text-center">OR</p>
           </form>
 
           <div className="flex justify-center items-center">
-            <button onClick={handleGoogleSignIn} className="btn mb-6 mt-4 bg-white text-black max-w-[300px] w-full border-0">
+            <button onClick={handleGoogleSignIn} className="btn mb-6 mt-2 bg-black text-white max-w-[300px] w-full border-0">
               <FcGoogle size={22} /> Sign in With Google
             </button>
+
+        
+
           </div>
+               <p className="text-center">Already have a account ? <Link className="text-blue-500 " href='/auth/login'> Login </Link></p>
         </div>
       </div>
       </div>

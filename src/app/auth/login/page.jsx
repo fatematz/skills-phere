@@ -111,10 +111,11 @@ const LoginPage = () => {
               </form>
             </div>
 
-            <div className="hidden md:flex justify-center items-center w-full">
-              <Image src={loginImg} alt="Login Image" className="w-full max-w-[400px]" />
+            <div className="hidden md:flex justify-center items-center border-l ">
+              <Image src={loginImg} alt="Login Image" className="w-full max-w-[600px]  " />
             </div>
 
+           
           </div>
         </div>
       </div>
