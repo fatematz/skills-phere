@@ -51,7 +51,7 @@ const TopInstructors = () => {
                 </h2>
 
                 <Marquee>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4  pt-[40px]">
+                <div className="grid grid-cols-4 sm:grid-cols-4 mr-6 md:grid-cols-4 xl:grid-cols-4 gap-6  pt-[40px]">
                     {topInstructors.map(instructor => (
                         <div
                             key={instructor.id}

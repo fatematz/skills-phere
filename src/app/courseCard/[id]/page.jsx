@@ -15,37 +15,37 @@ const CourseDetailsPage = async ({ params }) => {
                 <div className="bg-blue-400 w-full md:w-[40%] p-8 flex flex-col justify-between">
                     
                     <div>
-                        <span className="text-blue-300 text-xs uppercase tracking-widest font-semibold">
+                        <span className="text-white/100 text-xs uppercase tracking-widest font-semibold">
                             {course.category}
                         </span>
-                        <h1 className="text-white text-2xl font-bold mt-2 mb-6">
+                        <h1 className="text-white text-xl md:text-2xl font-bold mt-2 mb-6">
                             {course.title}
                         </h1>
 
                         <div className="space-y-3 border-b border-blue-400/30 pb-6 mb-6">
-                            <p className="text-blue-200 text-sm font-semibold uppercase tracking-wider">
+                            <p className="text-white/100 text-sm font-semibold uppercase tracking-wider">
                                 Course Info
                             </p>
-                            <p className="text-white/80 text-sm flex gap-2">
+                            <p className="text-white/100 text-sm flex gap-2">
                                 <Clock size={14} className="mt-0.5 text-blue-300" />
                                 Duration: {course.duration}
                             </p>
-                            <p className="text-white/80 text-sm flex gap-2">
+                            <p className="text-white/100 text-sm flex gap-2">
                                 <BarChart size={14} className="mt-0.5 text-blue-300" />
                                 Level: {course.level}
                             </p>
-                            <p className="text-white/80 text-sm flex gap-2">
+                            <p className="text-white/100 text-sm flex gap-2">
                                 <BookOpen size={14} className="mt-0.5 text-blue-300" />
                                 Instructor: {course.instructor}
                             </p>
                         </div>
 
                         <div className="space-y-2">
-                            <p className="text-blue-200 text-sm font-semibold uppercase tracking-wider mb-3">
+                            <p className="text-white/100 text-sm font-semibold uppercase tracking-wider mb-3">
                                 Curriculum
                             </p>
                             {["Introduction", "Core Concepts", "Hands-on Projects", "Advanced Topics", "Final Assessment"].map((item, i) => (
-                                <p key={i} className="text-white/70 text-sm flex gap-2">
+                                <p key={i} className="text-white/100 text-sm flex gap-2">
                                     <span className="text-blue-300">→</span> {item}
                                 </p>
                             ))}
@@ -59,7 +59,7 @@ const CourseDetailsPage = async ({ params }) => {
 
                 <div className="bg-white w-full md:w-[60%] p-8">
                     
-                    <h2 className="text-3xl font-bold text-gray-800">{course.title}</h2>
+                    <h2 className="text-xl md:text-3xl font-bold text-gray-800">{course.title}</h2>
                     <p className="text-gray-400 mt-1 mb-6">By {course.instructor}</p>
 
                     <img
