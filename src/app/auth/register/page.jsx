@@ -31,6 +31,7 @@ const RegisterPage = () => {
     })
 
     console.log(res, error);
+    
     if(error){ toast.error(error.message) }
     if(res){ toast.success("Registration successful! 🎉"); }
   };
@@ -42,20 +43,21 @@ const RegisterPage = () => {
 
   return (
     <div className="relative min-h-[80vh]">
-      <Image src={BgImg} alt="background" fill className="object-cover -z-10" />
+      {/* <Image src={BgImg} alt="background" fill className="object-cover -z-10" /> */}
 
-      <div className="min-h-[80vh] pt-[55px] px-4">
-        <div className="rounded-xl p-4 bg-white/10 backdrop-blur-md border border-white/20 max-w-[752px] px-6 sm:px-16 mx-auto mb-13">
+    <div className="bg-gray-50">
+      <div className="min-h-[80vh] pt-[55px] px-4 pb-2">
+        <div className="rounded-xl p-4 bg-white shadow-2xl max-w-[752px] px-6 sm:px-16 mx-auto mb-13">
           <h1 className="text-center text-white font-bold text-2xl md:text-3xl border-b py-8">
             Register your account
           </h1>
 
           <form
-            className="mt-6 w-full max-w-[300px] mx-auto"
+            className="mt-6 mb-6 w-full max-w-[300px] mx-auto text-black"
             onSubmit={handleSubmit(handleRegisterFunc)}
           >
             <fieldset className="fieldset">
-              <legend className="font-semibold text-[20px] fieldset-legend text-white">
+              <legend className="font-semibold text-[20px] fieldset-legend ">
                 Your Name
               </legend>
               <input
@@ -133,6 +135,7 @@ const RegisterPage = () => {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
