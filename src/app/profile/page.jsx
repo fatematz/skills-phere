@@ -44,7 +44,7 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-br from-blue-50 to-white py-16 px-4">
+    <div className="min-h-[60vh] bg-gradient-to-br from-blue-50 to-white py-6 px-4">
       <div className="max-w-[460px] mx-auto">
 
         {!isEditing ? (
@@ -65,7 +65,7 @@ const ProfilePage = () => {
               <p className="text-gray-400 text-sm mt-1">{user.email}</p>
 
               <div className="w-full mt-6 space-y-3">
-                <div className="flex items-center gap-3 bg-gray-50 rounded-2xl px-4 py-3">
+                <div className="flex items-center gap-3 bg-gray-100 rounded-2xl px-4 py-3">
                   <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                     <User size={14} className="text-blue-500" />
                   </div>
@@ -75,7 +75,7 @@ const ProfilePage = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 bg-gray-50 rounded-2xl px-4 py-3">
+                <div className="flex items-center gap-3 bg-gray-100 rounded-2xl px-4 py-3">
                   <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                     <Mail size={14} className="text-blue-500" />
                   </div>
@@ -126,7 +126,7 @@ const ProfilePage = () => {
               </div>
             </div>
 
-            <div className="px-6 pb-8 space-y-4">
+            <div className="px-6 space-y-4">
               <div>
                 <label className="text-sm text-gray-600 font-medium">Name</label>
                 <input
