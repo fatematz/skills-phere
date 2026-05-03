@@ -44,7 +44,7 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="min-h-[60vh] bg-gradient-to-br from-blue-50 to-white py-6 px-4">
+    <div className="min-h-[60vh] bg-gradient-to-br from-blue-50 to-white py-4 md:py-6 px-4">
       <div className="max-w-[460px] mx-auto">
 
         {!isEditing ? (
