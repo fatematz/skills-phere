@@ -42,7 +42,7 @@ const LearningTips = () => {
                     <span className="block h-1 w-16 bg-blue-400  mt-2 rounded"></span>
                 </h2>
 
-                <div className=" mx-[20px] md:mx-[20px] lg:mx-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 py-[40px] ">
+                <div className=" mx-[20px] md:mx-[20px] lg:mx-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 py-[20px] ">
                     {learningTips.map(tip => {
 
                         const IconComponent = 

@@ -30,7 +30,7 @@ const TopCourse = () => {
         <span className="block h-1 w-16 bg-blue-400 mt-2 rounded"></span>
       </h2>
 
-      <div className="space-y-6 py-[40px]">
+      <div className="space-y-6 py-[20px]">
         {top3.map((course, index) => (
           <div
             key={course.id}

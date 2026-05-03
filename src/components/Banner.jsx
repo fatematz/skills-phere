@@ -3,7 +3,7 @@ import img1 from "@/assets/image2.png"
 
 const Banner = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-50 to-white pt-10 md:pt-20 overflow-hidden">
+    <section className="bg-gradient-to-r from-blue-50 to-white pt-10 md:pt-20  overflow-hidden">
       
       <div className="container mx-auto px-[20px] md:px-[20px] lg:px-[20px] xl:px-0"> 
         

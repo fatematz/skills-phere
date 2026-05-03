@@ -44,11 +44,11 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="min-h-[60vh] bg-gradient-to-br from-blue-50 to-white py-4 md:py-6 px-4">
+    <div className="min-h-[60vh] bg-gradient-to-br from-blue-50 to-white py-6 px-4">
       <div className="max-w-[460px] mx-auto">
 
         {!isEditing ? (
-          <div className="bg-white rounded-3xl shadow-md border border-gray-100 overflow-hidden">
+          <div className="bg-white rounded-3xl  shadow-md border border-gray-100 overflow-hidden">
 
             <div className="bg-gradient-to-r from-blue-400 to-blue-500 h-24 w-full relative">
               <div className="absolute -bottom-12 left-1/2 -translate-x-1/2">
@@ -152,7 +152,7 @@ const ProfilePage = () => {
               <button
                 onClick={handleUpdate}
                 disabled={isLoading}
-                className="w-full bg-blue-500 text-white py-3 rounded-2xl hover:bg-blue-600 transition font-medium mt-2"
+                className="w-full bg-blue-500 text-white py-3 rounded-2xl hover:bg-blue-600 transition font-medium mt-2 mb-6"
               >
                 {isLoading ? "Saving..." : "Save Changes"}
               </button>

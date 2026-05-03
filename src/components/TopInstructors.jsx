@@ -43,7 +43,7 @@ const topInstructors = [
 
 const TopInstructors = () => {
     return (
-        <div className="bg-gradient-to-r from-blue-50 to-white py-20 py-10 ">
+        <div className="bg-gradient-to-r from-blue-50 to-white py-10 ">
             <div className="container px-[20px] md:px-[20px] lg:px-[20px] xl:px-0">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
                     Top Instructors
