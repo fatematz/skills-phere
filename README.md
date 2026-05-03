@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Skills-Phere
 
-## Getting Started
+A modern online learning platform where learners can discover courses, learn from top instructors, and grow their skills — all in one place.
 
-First, run the development server:
+---
+
+## 🔗 Live Site
+
+[skills-phere.vercel.app](https://skills-phere.vercel.app)
+
+---
+
+## 📖 Short Description
+
+SkillSphere is a full-stack online course platform built with Next.js. Users can browse structured courses, view instructor profiles, and manage their own accounts with secure authentication. The platform is designed to be fast, responsive, and beginner-friendly.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Next.js 16** — App Router, Server Components
+- **React 19** — UI Components
+- **Tailwind CSS v4** — Styling
+- **DaisyUI** — UI Component Library
+- **Better Auth** — Authentication (Login & Register)
+- **MongoDB** — Database
+- **Animate.css** — Animations
+- **Swiper.js** — Card Sliders
+- **Lucide React** — Icons
+- **React Toastify** — Toast Notifications
+- **React Hook Form** — Form Handling
+
+---
+
+## ✨ Key Features
+
+### 1. 🔐 Secure Authentication
+Users can register and log in securely using Better Auth. Protected routes ensure only logged-in users can access course details and their profile page.
+
+### 2. 📚 Course Browser with Details
+Browse top-rated courses sorted by rating. Each course has a dedicated details page showing duration, level, instructor, curriculum, and description.
+
+### 3. 👤 Editable User Profile
+Users can view and update their profile name and photo URL directly from their profile page — with a clean UI and instant toast feedback on save.
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/
+│   ├── page.js
+│   ├── layout.js
+│   ├── auth/
+│   │   ├── login/
+│   │   └── register/
+│   ├── profile/
+│   └── courseCard/
+├── components/
+│   ├── Banner.jsx
+│   ├── TopCourse.jsx
+│   ├── TopInstructors.jsx
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+└── courses.json
+```
