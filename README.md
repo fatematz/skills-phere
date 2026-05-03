@@ -1,3 +1,4 @@
+
 # Skills-Phere
 
 A modern online learning platform where learners can discover courses, learn from top instructors, and grow their skills — all in one place.
@@ -79,3 +80,6 @@ src/
 │   └── Footer.jsx
 └── courses.json
 ```
+
+
+<img width="1920" height="3908" alt="screencapture-skills-phere-vercel-app-2026-05-03-19_53_05" src="https://github.com/user-attachments/assets/56435a37-1c1e-4cc7-87b3-52e954735e1a" />
