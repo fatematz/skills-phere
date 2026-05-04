@@ -7,10 +7,12 @@ import { toast } from "react-toastify";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 
 const RegisterPage = () => {
+   const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -29,13 +31,15 @@ const RegisterPage = () => {
       email: email,
       password: password,
       image: photo,
-      callbackURL: "/",
+      callbackURL: "/auth/login",
     })
 
     console.log(res, error);
     
     if(error){ toast.error(error.message) }
-    if(res){ toast.success("Registration successful! 🎉"); }
+    if(res){ toast.success("Registration successful! 🎉");
+       router.push("/auth/login");
+     }
   };
 
   const handleGoogleSignIn = async () => {
